@@ -1,0 +1,10 @@
+port = "3000"
+
+max_connection = 10
+
+preferences {
+	font_size = 10
+	foreground_color = "rbg(0, 255, 0)"
+	background_color = "rgb(20, 20, 40)"
+	user_css = "./terminal.css"
+}
