@@ -7,12 +7,15 @@ pastel = Pastel.new(enabled: true)
 continue = true
 
 while continue
-  name = prompt.ask(pastel.white("\n\n=== Hello. What's your name? === "))
+  
+    puts "\n\n"
+    puts pastel.white("=== Hello. Welcome to HackNASA ===")
+    name = prompt.ask(pastel.white("=== Enter Your Name To Start Hacking:  "), default: "guest")
 
     # Hacking process
 
     puts pastel.decorate("\nStarting Process PID 16831", :cyan, :bold)
-    bars = TTY::ProgressBar::Multi.new(pastel.white("Attacking"), bar_format: :box)
+    bars = TTY::ProgressBar::Multi.new(pastel.white("Attacking NASA"), bar_format: :box)
 
     bar3 = bars.register(pastel.cyan("Injecting Malware [:bar] :percent"), bar_format: :box, total: 15)
     bar2 = bars.register(pastel.cyan("Bypassing Authentication [:bar] :percent"), bar_format: :box, total: 15)
