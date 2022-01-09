@@ -2,15 +2,19 @@ require "tty-prompt"
 require "tty-progressbar"
 require "pastel"
 
-prompt = TTY::Prompt.new 
+prompt = TTY::Prompt.new(active_color: :cyan)
 pastel = Pastel.new(enabled: true)
 continue = true
 
 while continue
   
-    puts "\n\n"
-    puts pastel.white("=== Hello. Welcome to HackNASA ===")
-    name = prompt.ask(pastel.white("=== Enter Your Name To Start Hacking:  "), default: "guest")
+
+    # Welcome message
+    puts "\n"
+    puts pastel.white("=== Hello. Welcome to TTY ON CLOUD ===")
+    puts pastel.white("    This project is still in its early stage ") 
+    puts (pastel.white("    It can only ") + pastel.decorate("hack NASA ", :cyan, :bold) + pastel.white("at the moment \n"))
+    name = prompt.ask(pastel.white("=== Enter Your Name To Start Hacking:"), default: "Mae", )
 
     # Hacking process
 
@@ -53,12 +57,14 @@ while continue
     puts "=== DONE ==="
     puts pastel.decorate("=== Congrats " + name.upcase + " hacking NASA successfully! ===", :cyan, :bold)
 
-    choices = %w(replay stop)
+    choices = %w(restart stop)
 
-    selection =  prompt.select("\nReplay? ", choices) 
+    selection =  prompt.select("\nRestart? ", choices) 
     
     puts selection
     if selection == choices[1]
       break
     end
+
+    puts "Refresh the page to restart session"
 end
