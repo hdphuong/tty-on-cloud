@@ -7,7 +7,7 @@ pastel = Pastel.new(enabled: true)
 continue = true
 
 while continue
-    choices = ["Hack NASA", "Shuck - a subset of Shell", "Snake game in Assembly"]
+    choices = ["Hack NASA", "Shuck - a subset of Shell"]
 
     selection =  prompt.select("\nCheck out: ", choices) 
     
