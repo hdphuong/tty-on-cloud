@@ -14,7 +14,9 @@ while continue
     if selection == choices[0]
       system("ruby terminal.rb")
     elsif selection == choices[1]
-      puts "Shell implementation (COMP1521 assignment)"
+      puts "Work just like Shell (COMP1521 assignment)"
+      puts "Type " + pastel.decorate("exit ", :cyan, :bold) + "to quit"
+      puts " "
       system("./shuck")
     else
       puts "Snake game in Assembly (COMP1521 assignment)"

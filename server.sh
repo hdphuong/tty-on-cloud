@@ -1,3 +1,4 @@
 #!/bin/sh
 
-go/bin/gotty -w --config .gotty --title-format "Hack NASA"  ruby terminal.rb & 
+
+go/bin/gotty -w --config .gotty --title-format "TTY-ON-CLOUD"  ruby menu.rb & 
