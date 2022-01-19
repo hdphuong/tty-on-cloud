@@ -54,9 +54,9 @@ while continue
     puts "=== DONE ==="
     puts pastel.decorate("=== Congrats " + name.upcase + " hacking NASA successfully! ===", :cyan, :bold)
 
-    choices = %w(restart stop)
+    choices = %w(redo stop)
 
-    selection =  prompt.select("\nRestart? ", choices) 
+    selection =  prompt.select("\nRedo hacking? ", choices) 
     
     puts selection
     if selection == choices[1]

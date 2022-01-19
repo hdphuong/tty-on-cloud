@@ -6,7 +6,7 @@ prompt = TTY::Prompt.new(active_color: :cyan)
 pastel = Pastel.new(enabled: true)
 continue = true
 
-puts pastel.white("=== Hello. Welcome to ") + pastel.decorate("TTY ON CLOUD", :cyan, :bold) + pastel.white("===")
+puts pastel.white("=== Hello. Welcome to ") + pastel.decorate("TTY ON CLOUD", :cyan, :bold) + pastel.white(" ===")
 while continue
     choices = ["Hack NASA", "Shuck - a subset of Shell"]
 
