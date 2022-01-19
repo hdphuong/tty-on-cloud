@@ -11,9 +11,6 @@ while continue
 
     # Welcome message
     puts "\n"
-    puts pastel.white("=== Hello. Welcome to TTY ON CLOUD ===")
-    puts pastel.white("    This project is still in its early stage ") 
-    puts (pastel.white("    It can only ") + pastel.decorate("hack NASA ", :cyan, :bold) + pastel.white("at the moment \n"))
     name = prompt.ask(pastel.white("=== Enter Your Name To Start Hacking:"), default: "Mae", )
 
     # Hacking process
