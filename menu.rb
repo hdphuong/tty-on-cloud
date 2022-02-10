@@ -15,7 +15,7 @@ while continue
     if selection == choices[0]
       system("ruby hackNASA.rb")
     elsif selection == choices[1]
-      puts "Work just like Shell (COMP1521 assignment)"
+      puts "Work just like Shell"
       puts "Type " + pastel.decorate("exit ", :cyan, :bold) + "to quit"
       puts " "
       system("./shuck")
