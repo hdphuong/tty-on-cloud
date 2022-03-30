@@ -16,9 +16,10 @@ while continue
       system("ruby hackNASA.rb")
     elsif selection == choices[1]
       puts "Work just like Shell"
-      puts "Type " + pastel.decorate("exit ", :cyan, :bold) + "to quit"
+      puts "This feature was temporarily removed since someone attempted to use it for malicious purposes"
+      #puts "Type " + pastel.decorate("exit ", :cyan, :bold) + "to quit"
       puts " "
-      system("./shuck")
+      #system("./shuck")
     else
       puts "Snake game in Assembly (COMP1521 assignment)"
       system("./snake")
